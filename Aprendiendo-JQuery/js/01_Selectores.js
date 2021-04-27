@@ -6,5 +6,23 @@ $(document).ready(function(){
                                  .css("color","red");
     $("#verde").css("background","green");
 
-    console.log(rojo);
+    
+
+    //Selector de Clase
+    var mi_clase = $('.zebra').css("padding","5px");
+    console.log(mi_clase);
+
+    mi_clase.css("border","5px dashed black");
+
+    $('.sin_borde').click(function(){
+        console.log("Click usado");
+        $(this).addClass('zebra');
+    });
+
+    //Selectores de Etiqueta
+    var parrafos = $('p');
+
+    parrafos.click(function(){
+        $(this).removeClass("zebra");
+    });
 });   
