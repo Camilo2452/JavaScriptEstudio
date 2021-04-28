@@ -20,9 +20,25 @@ $(document).ready(function(){
     });
 
     //Selectores de Etiqueta
-    var parrafos = $('p');
+    var parrafos = $('p').css("cursor","pointer");
 
     parrafos.click(function(){
-        $(this).removeClass("zebra");
+        var cam = $(this);
+        if( cam.hasClass('grande')){
+            cam.removeClass('grande');
+        }else{
+            cam.removeClass('grande');
+        }
     });
+    //Selectores de Atributos
+
+    $('[title=Google]').css('background', "#ccc");
+    $('[title=Facebook]').css('background', 'blue');
+
+    //Otros
+    //$('p, a').addClass('margen-superior');
+    //var busqueda = $("#caja").find('.resultado');
+    var busqueda = $("#caja .resultado").eq(0).parent().parent().find('[title="Google"]');
+
+    console.log(busqueda);
 });   

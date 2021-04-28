@@ -11,16 +11,37 @@
         .zebra{
             border: 5px dashed black;
         }
+        .grande{
+            font-size: 30px;
+        }
+        .margen-superior{
+            margin-top: 45px;
+            display: block;
+        }
+        .resultado{
+            border-bottom: 2px solid brown;
+        }
     </style>
 </head>
 <body>
 
     
     <h1>Aprendiendo Jquery</h1>
-    
+    <ul>
+        <li><a href="https://www.google.com/" title="Google">Ir a Google</a></li>
+        <li><a href="https://www.facebook.com/" title="Facebook">Ir a Facebook</a></li>
+    </ul>
     <p id="rojo" class="sin_borde">Ejercicios de Jquery</p>
     <p id="amarillo" class="zebra">Practicando con Selectores</p>
     <p id="verde" class="sin_borde">Quiero ser un Parrafo verde</p>
     <p class="zebra">Parrafo de ejemplo</p>
+    <div id="caja">
+        <p>Hola Soy una Caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="resultado">Elemento 2</li>
+        </ul>
+    </div>
+    <span class="resultado">Soy un Span</span>
 </body>
 </html>
