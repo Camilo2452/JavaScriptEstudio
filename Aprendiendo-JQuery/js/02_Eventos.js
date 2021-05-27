@@ -28,4 +28,41 @@ $(document).ready(function(){
         $(this).css("background","yellow")
                .css("color","red");
     });
+
+    //Focus y Blur
+
+    var nombre = $("#nombre");
+    var datos =$("#datos");
+
+    nombre.focus(function(){
+        $(this).css("border","2px solid green");
+    });
+
+    nombre.blur(function(){
+        $(this).css("border","1px solid transparent");
+        //$(this).val();
+        datos.text($(this).val()).show();
+    });
+
+    //MouseDown and MouseUp
+
+    datos.mousedown(function(){
+        $(this).css("border-color","gray");
+    });
+
+    datos.mouseup(function(){
+        $(this).css("border-color","purple");
+    });
+
+    //MouseUp
+    $(document).mousemove(function(){
+        console.log("En x "+event.clientX);
+        console.log("En y "+event.clientX);
+        
+        var sigueme = $("#sigueme");
+        $('body').css("cursor","none");
+        sigueme.css("left",event.clientX)
+               .css("top",event.clientY);
+    });
+
 });
