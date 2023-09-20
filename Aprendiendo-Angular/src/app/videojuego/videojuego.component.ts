@@ -12,18 +12,18 @@ export class VideoJuegoComponent{
     constructor(){
         this.titulo = 'Componente de Videojuegos';
         this.estado = 'Estado Alto';
-        console.log('Cargado Correctamente');
+       // console.log('Cargado Correctamente');
     }
     ngOnInit(){
-        console.log('OnInit, Activado')
+       // console.log('OnInit, Activado')
     }
 
     ngDoCheck(){
-        console.log('Do Check Activado');
+        //console.log('Do Check Activado');
     }
 
     OnDestroy(){
-        console.log('On Destroy Activado');
+        //console.log('On Destroy Activado');
     }
 
     cambiarTitulo(){

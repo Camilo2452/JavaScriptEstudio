@@ -1,6 +1,11 @@
-<div style="text-align: center;">
+<div [ngStyle]="{
+        'background':config.fondo,
+        'padding':'2px',
+        'border':'5px solid black',
+        'border-color': config.color
+                }">
   <h1>Bienvenido al {{ title }}</h1>
-  <p>Vamos juntos caminemos juntos</p>
+  <p>{{descripcion}}</p>
 
   <button (click)="ocultarVideojuego(false)" *ngIf="mostar_videojuegos">Ocultar</button>
   <button (click)="ocultarVideojuego(true)" *ngIf="mostar_videojuegos">Mostar</button>

@@ -1,6 +1,6 @@
 export var configuracion = {
     "color":"red",
-    "fondo":"blue",
+    "fondo":"#eee",
     "titulo":"Aplicacion con Angular",
-    "descripcion":"Aplicacion con Angular con Victor Robles"
+    "descripcion":"Master en JavaScript y Angular -  Camilo Rozo Rios"
 };
